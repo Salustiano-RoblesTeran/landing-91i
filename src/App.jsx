@@ -21,7 +21,7 @@ function App() {
       <div className="container" >
         <div className="row">
           {detalleCard.map((item, index) => (
-            <CardApp item={item} key={index} />
+            <CardApp item={item} key={index} modoOscuro = {modoOscuro}/>
           ))}
         </div>
       </div>

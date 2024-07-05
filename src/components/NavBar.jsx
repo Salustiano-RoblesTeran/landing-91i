@@ -79,9 +79,13 @@ const NavBar = ({cambiarModoOscuro, modoOscuro}) => {
                     className="icon-tiempo"
                   />
                   <span className={modoOscuro? "text-white": ""}>{Math.round(tiempo.temp)}°C</span>
+                </div>
+              )}
+            </div>
 
-                  {modoOscuro? (<i className="fa fa-moon-o text-white" aria-hidden="true"></i> ) : (<i className="fa fa-sun-o " aria-hidden="true"></i>)}
-                  <div className="form-check form-switch">
+
+            {modoOscuro? (<i className="fa fa-moon-o text-white" aria-hidden="true"></i> ) : (<i className="fa fa-sun-o " aria-hidden="true"></i>)}
+              <div className="form-check form-switch">
                 <input
                   className="form-check-input"
                   type="checkbox"
@@ -90,9 +94,6 @@ const NavBar = ({cambiarModoOscuro, modoOscuro}) => {
                   onChange={cambiarModoOscuro}
                 />
               </div>
-                </div>
-              )}
-            </div>
           </div>
         </nav>
       </div>
